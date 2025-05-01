@@ -129,7 +129,7 @@ const GenerateProgramPage = () => {
         setCallEnded(false);
 
         const fullName = user?.firstName
-          ? `${user.firstName} ${user.lastName || ""}`.trim()
+          ? `${user.firstName}`.trim()
           : "There";
 
         await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
